@@ -54,7 +54,7 @@ void desenfileiraAlunos(Aluno*& inicio) {
             cout << "Matrícula: " << aluno->matricula <<endl;
         }
 
-        delete aluno; // Libera a memória do aluno desenfileirado
+        delete aluno; // Libera a memória do aluno desenfileirado, delete -> operador
     }
 }
 
