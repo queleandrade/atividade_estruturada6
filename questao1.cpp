@@ -28,7 +28,7 @@ void enfileira(No*& inicio, No*& fim, int valor) {
 // Função para desenfileirar o primeiro valor da fila
 int desenfileira(No*& inicio) {
     if (inicio == nullptr) {
-        std::cout << "Fila vazia." << std::endl;
+        cout << "Fila vazia." <<endl;
         return -1;
     }
 
@@ -42,11 +42,11 @@ int desenfileira(No*& inicio) {
 
 // Função para imprimir os valores da fila
 void imprimeFila(const No* inicio) {
-    std::cout << "Elementos na fila:" << std::endl;
+    cout << "Elementos na fila:" <<endl;
 
     const No* atual = inicio; // Ponteiro para percorrer a fila
     while (atual != nullptr) {
-        std::cout << atual->valor << " "; // Imprime o valor do nó atual
+        cout << atual->valor << " "; // Imprime o valor do nó atual
         atual = atual->proximo; // Avança para o próximo nó
     }
 
@@ -66,7 +66,7 @@ int contaElementos(const No* inicio) {
 
 // Função para desenfileirar e imprimir apenas os valores pares da fila
 void desenfileiraPares(No*& inicio) {
-    std::cout << "Desenfileirando elementos pares:" << std::endl;
+    cout << "Desenfileirando elementos pares:" <<endl;
 
     while (inicio != nullptr) {
         int valor = desenfileira(inicio); // Desenfileira o primeiro valor da fila
